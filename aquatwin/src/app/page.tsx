@@ -17,6 +17,7 @@ export default function Home() {
       <Patners />
       <Contact />
       <Footer />
+      
     </main>
   );
 }
