@@ -13,7 +13,7 @@ const SolutionCard: React.FC<SolutionCardProps> = ({
   return (
     <div className="flex flex-col items-center text-center p-1">
       <span className="mb-6">{icon}</span>
-      <h4 className="text-title text-3xl font-bold mb-5">{title}</h4>
+      <h4 className="text-title text-2xl font-bold mb-5">{title}</h4>
       <p className="text-sm text-text">{description}</p>
     </div>
   );
