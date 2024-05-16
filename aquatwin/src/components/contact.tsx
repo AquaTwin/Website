@@ -65,11 +65,16 @@ const Contact = () => {
   }
 
   return (
-    <div className='bg-primary-1 w-screen h-screen p-5 flex flex-col gap-5 px-10 md:px-80'>
-      <h1 className='text-4xl text-center font-bold '>Get in Touch</h1>
-      <p className='text-sm md:text:md text-center'>We'd love to hear from you. Please reach out to us for any inquiries or collaborations.</p>
+    <div className='bg-primary-1 w-screen py-12 flex flex-col items-center gap-5 px-10 '>
+      <div>
+        <p className="text-text font-bold text-sm text-center mb-3">
+          Connect
+        </p>
+        <h1 className='text-4xl text-center font-bold '>Get in Touch</h1>
+      </div>
+      <p className='text-sm md:text-lg text-center'>We&rsquo;d love to hear from you. Please reach out to us for any inquiries or collaborations.</p>
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className=" flex flex-col gap-7 md:px-20 mt-5 ">
+        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4 mt-5 w-full max-w-[800px]">
           <FormField
             control={form.control}
             name="name"
@@ -113,10 +118,8 @@ const Contact = () => {
               </FormItem>
             )}
           />
+          <Button className='w-full' variant="submit" type="submit">Submit</Button>
         </form>
-        <div className='mx-auto'>
-          <Button variant="submit" type="submit">Submit</Button>
-        </div>
       </Form>
     </div>
   )
