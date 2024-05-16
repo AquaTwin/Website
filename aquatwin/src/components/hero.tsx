@@ -4,16 +4,16 @@ import { Button } from './ui/button'
 
 const Hero = () => {
   return (
-    <div className='w-screen sm:h-96 lg:h-screen text-white bg-black'>
+    <section className='w-full h-[80vh] sm:h-screen text-white bg-black flex flex-col'>
       <Header />
-      <div className='flex flex-col p-1 gap-3 md:gap-6 justify-center  h-3/5 md:h-full align-middle text-center relative'>
+      <div className='flex flex-col p-1 gap-3 md:gap-6 justify-center flex-grow items-center text-center '>
         <h1 className='text-3xl md:text-5xl font-semibold'>Bridging the gap in Transboundary River Basin Management</h1>
-        <div className='flex justify-center w-screen gap-10'>
+        <div className='flex justify-center w-full gap-10'>
           <Button>Learn more</Button>
-          <Button variant="contact" >Contact us</Button>
+          <Button variant="outline" >Contact us</Button>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

@@ -12,7 +12,7 @@ interface NavLinksProps {
 
 const NavLinks: React.FC<NavLinksProps> = ({ links }) => {
   return (
-    <ul className='flex w-96 justify-between'>
+    <ul className='flex lg:w-96 gap-4 lg:gap-0 justify-between'>
       {links.map((link, index) => (
         <li key={index} className='hover:text-btn'>
           <Link href={link.href}>
