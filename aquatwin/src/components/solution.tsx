@@ -1,5 +1,5 @@
 import React from "react";
-import { ChevronRight, Cog, LineChart, ScatterChart } from "lucide-react";
+import { Cog, LineChart, ScatterChart } from "lucide-react";
 
 const solutions = [
   {
@@ -49,10 +49,9 @@ const Solution = () => {
           />
         ))}
       </div>
-      <div className="flex space-x-6 justify-center mt-6">
+      {/* <div className="flex space-x-6 justify-center mt-6">
         <Button variant={"outline"}>Learn More</Button>
-        <Button variant={"link"}>Sign Up <ChevronRight /></Button>
-      </div>
+      </div> */}
     </div>
   );
 };

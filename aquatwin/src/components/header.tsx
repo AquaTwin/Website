@@ -12,7 +12,7 @@ const Header: React.FC = () => {
   ];
 
   return (
-    <nav className='w-screen  bg-black pt-5 h-12 flex items-center justify-between p-3'>
+    <nav className='h-12 flex items-center justify-between p-10'>
       <Image
         src="/aquatwin-logo.png"
         width={100}
@@ -31,7 +31,7 @@ const Header: React.FC = () => {
           <NavLinks links={links} />
         </div>
         <div className='hidden md:block'>
-        <Button variant="contact" >Contact us</Button>
+        <Button variant="outline" >Contact us</Button>
         </div>
       <div className='block md:hidden '>
         <Dropdown />
