@@ -8,18 +8,23 @@ import {
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { Menu } from 'lucide-react';
+import Link from 'next/link';
+import { NavLink } from '@/components/ui/navlinks'
 
 
-const Dropdown = () => {
+const Dropdown = ({links}: {links: NavLink[]}) => {
     return (
         <div>
             <DropdownMenu>
                 <DropdownMenuTrigger> <Menu/> </DropdownMenuTrigger>
                 <DropdownMenuContent>
-                    <DropdownMenuItem>Problem Statement</DropdownMenuItem>
-                    <DropdownMenuItem>Our Solution</DropdownMenuItem>
-                    <DropdownMenuItem>Team</DropdownMenuItem>
-                    <DropdownMenuItem>Contact us</DropdownMenuItem>
+                {links.map((link, index) => (
+                    <DropdownMenuItem key={index}>
+                    <Link href={link.href}>
+                        {link.text}
+                    </Link>
+                        </DropdownMenuItem>
+                ))}
                 </DropdownMenuContent>
             </DropdownMenu>
 

@@ -67,7 +67,7 @@ const Contact = () => {
 
   return (
     <Container>
-      <div className='bg-primary-1 flex flex-col items-center gap-5'>
+      <section className='bg-primary-1 flex flex-col items-center gap-5' id='contact'>
         <div>
           <p className="font-bold text-sm text-center mb-3">
             Connect
@@ -123,7 +123,7 @@ const Contact = () => {
             <Button className='w-full' type="submit">Submit</Button>
           </form>
         </Form>
-      </div>
+      </section>
     </Container>
   )
 }
