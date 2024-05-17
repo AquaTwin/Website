@@ -44,10 +44,8 @@ const Team = () => {
 
   return (
     <Container>
-
-      <section className='space-y-8 w-full min-h-[80vh] place-items-center grid'>
+      <section id='team' className='space-y-8 w-full min-h-[80vh] place-items-center grid'>
         <div>
-
           <div className='space-y-2 text-center mb-20'>
             <p className="text-text font-bold text-sm text-center mb-3">
               Experienced
@@ -61,7 +59,6 @@ const Team = () => {
             ))}
           </div>
         </div>
-
       </section>
     </ Container>
       )
