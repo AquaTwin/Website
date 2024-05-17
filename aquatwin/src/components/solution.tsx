@@ -28,8 +28,7 @@ import { Button } from "./ui/button";
 const Solution = () => {
   return (
     <Container>
-
-      <div className="flex-wrap bg-primary-1 md:text-lg">
+      <section className="flex-wrap bg-primary-1 md:text-lg" id="solution">
         <p className="text-text font-bold text-center mb-3 text-sm">
           Revolutionize
         </p>
@@ -54,8 +53,7 @@ const Solution = () => {
         {/* <div className="flex space-x-6 justify-center mt-6">
         <Button variant={"outline"}>Learn More</Button>
       </div> */}
-      </div>
-
+      </section>
     </Container>
 
   );
