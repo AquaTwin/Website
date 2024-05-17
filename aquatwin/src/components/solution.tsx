@@ -1,6 +1,6 @@
 import React from "react";
 import { Cog, LineChart, ScatterChart } from "lucide-react";
-
+import Container from "./container";
 const solutions = [
   {
     icon: <Cog size={40} />,
@@ -27,32 +27,37 @@ import { Button } from "./ui/button";
 
 const Solution = () => {
   return (
-    <div className="text-[22px] text-wrap flex-wrap px-5 py-16 bg-primary-1 w-screen">
-      <p className="text-text font-bold text-sm text-center mb-3">
-        Revolutionize
-      </p>
-      <h2 className="text-4xl font-bold text-title text-center mb-5">
-        Unleash the Power of Our Digital Twin Model
-      </h2>
-      <p className="text-sm text-center text-text">
-        Discover the advanced capabilities and industry applications of our
-        digital twin model.
-      </p>
+    <Container>
 
-      <div className="space-y-12 mt-12 md:flex md:space-y-0 md:gap-12">
-        {solutions.map(({ icon, title, description }, index) => (
-          <SolutionCard
-            key={index}
-            icon={icon}
-            title={title}
-            description={description}
-          />
-        ))}
-      </div>
-      {/* <div className="flex space-x-6 justify-center mt-6">
+      <div className="flex-wrap bg-primary-1 md:text-lg">
+        <p className="text-text font-bold text-center mb-3 text-sm">
+          Revolutionize
+        </p>
+        <h2 className="text-4xl font-bold text-title text-center mb-5">
+          Unleash the Power of Our Digital Twin Model
+        </h2>
+        <p className="text-center text-text">
+          Discover the advanced capabilities and industry applications of our
+          digital twin model.
+        </p>
+
+        <div className="space-y-12 mt-12 md:flex md:space-y-0 md:gap-12">
+          {solutions.map(({ icon, title, description }, index) => (
+            <SolutionCard
+              key={index}
+              icon={icon}
+              title={title}
+              description={description}
+            />
+          ))}
+        </div>
+        {/* <div className="flex space-x-6 justify-center mt-6">
         <Button variant={"outline"}>Learn More</Button>
       </div> */}
-    </div>
+      </div>
+
+    </Container>
+
   );
 };
 
