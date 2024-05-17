@@ -18,6 +18,7 @@ import {
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { toast } from "@/components/ui/use-toast"
+import Container from './container'
 
 const formSchema = z.object({
   name: z
@@ -65,63 +66,65 @@ const Contact = () => {
   }
 
   return (
-    <div className='bg-primary-1 w-screen py-12 flex flex-col items-center gap-5 px-10 '>
-      <div>
-        <p className="text-text font-bold text-sm text-center mb-3">
-          Connect
-        </p>
-        <h1 className='text-4xl text-center font-bold '>Get in Touch</h1>
+    <Container>
+      <div className='bg-primary-1 flex flex-col items-center gap-5'>
+        <div>
+          <p className="font-bold text-sm text-center mb-3">
+            Connect
+          </p>
+          <h1 className='text-4xl text-center font-bold text-title'>Get in Touch</h1>
+        </div>
+        <p className='text-sm md:text-lg text-center'>We&rsquo;d love to hear from you. Please reach out to us for any inquiries or collaborations.</p>
+        <Form {...form}>
+          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4 mt-5 w-full max-w-[700px]">
+            <FormField
+              control={form.control}
+              name="name"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Name</FormLabel>
+                  <FormControl>
+                    <Input placeholder="" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="email"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Email</FormLabel>
+                  <FormControl>
+                    <Input placeholder="" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="userMessage"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Message</FormLabel>
+                  <FormControl>
+                    <Textarea
+                      placeholder=""
+                      className="resize-none focus-visible:border-none"
+                      {...field}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <Button className='w-full' type="submit">Submit</Button>
+          </form>
+        </Form>
       </div>
-      <p className='text-sm md:text-lg text-center'>We&rsquo;d love to hear from you. Please reach out to us for any inquiries or collaborations.</p>
-      <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4 mt-5 w-full max-w-[800px]">
-          <FormField
-            control={form.control}
-            name="name"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>Name</FormLabel>
-                <FormControl>
-                  <Input placeholder="" {...field} />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-          <FormField
-            control={form.control}
-            name="email"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>Email</FormLabel>
-                <FormControl>
-                  <Input placeholder="" {...field} />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-          <FormField
-            control={form.control}
-            name="userMessage"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>Message</FormLabel>
-                <FormControl>
-                  <Textarea
-                    placeholder=""
-                    className="resize-none"
-                    {...field}
-                  />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-          <Button className='w-full' variant="submit" type="submit">Submit</Button>
-        </form>
-      </Form>
-    </div>
+    </Container>
   )
 }
 

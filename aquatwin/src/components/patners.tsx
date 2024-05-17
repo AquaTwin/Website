@@ -1,25 +1,31 @@
 import React from 'react'
 import Image from 'next/image'
-const Patners = () => {
+const Partners = () => {
   const partners = [
     {
-      image: '/next.svg',
+      name: "JKUAT",
+      image: '/partners/jkuat.png',
+      size: 100,
     },
     {
-      image: 'next.svg',
+      name: "JHUB",
+      image: '/partners/jhub.png',
+      size: 200,
     },
   ]
 
   return (
-    <section className='w-full space-y-7 pb-16 bg-primary-1 text-center'>
-      <h2 className='font-semibold text-lg'>Trusted by industry leading companies</h2>
+    <section className='w-full space-y-7 bg-primary-1 text-center'>
+      <h2 className='font-semibold text-lg'>In partnership with </h2>
       <div className='flex flex-wrap justify-center gap-8 '>
         {partners.map((partner, index) => (
-          <Image width={100} height={100} key={index} src={partner.image} alt='partner' />
+          <div className='max-w-[300px] flex items-center' key={index}>
+            <Image width={partner.size} height={partner.size} key={index} src={partner.image} alt={partner.name} />
+          </div>
         ))}
       </div>
     </section>
   )
 }
 
-export default Patners
+export default Partners
