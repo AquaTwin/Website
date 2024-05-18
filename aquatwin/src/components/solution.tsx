@@ -1,43 +1,40 @@
 import React from "react";
 import { Cog, LineChart, ScatterChart } from "lucide-react";
 import Container from "./container";
+import SolutionCard from "./solution-card";
+import { Button } from "./ui/button";
+
+
 const solutions = [
   {
     icon: <Cog size={40} />,
-    title: "Sophosticated Technology for Industry Applications",
+    title: "Application of New Technology in Transboundary River Basin Modelling",
     description:
-      "Our digital twin model offers a comprehensive set of technical features and capabilities.",
+      "AquaTwin offers a comprehensive set of technical features and capabilities in modelling the transboundary river basins.",
   },
   {
     icon: <LineChart size={40} />,
-    title: "Real-Time Monitoring and Analysis",
+    title: "Real-Time Monitoring and Analysis of transboundary river basins",
     description:
       "Stay informed with real-time data and analysis provided by our digital twin model.",
   },
   {
     icon: <ScatterChart size={40} />,
-    title: " Predictive Modeling and Simulation",
+    title: " Predictive Modelling and Simulation",
     description:
-      "Leverage predictive modeling and simulation to make informed decisions and optimize operations.",
+      "The project predicts flood occurences as well as simulates water flow.",
   },
 ];
-
-import SolutionCard from "./solution-card";
-import { Button } from "./ui/button";
 
 const Solution = () => {
   return (
     <Container>
       <section className="flex-wrap bg-primary-1 md:text-lg" id="solution">
-        <p className="text-text font-bold text-center mb-3 text-sm">
-          Revolutionize
-        </p>
         <h2 className="text-4xl font-bold text-title text-center mb-5">
-          Unleash the Power of Our Digital Twin Model
+          The Power of AquaTwin
         </h2>
         <p className="text-center text-text">
-          Discover the advanced capabilities and industry applications of our
-          digital twin model.
+          Discover the advanced capabilities of AquaTwin.
         </p>
 
         <div className="space-y-12 mt-12 md:flex md:space-y-0 md:gap-12">

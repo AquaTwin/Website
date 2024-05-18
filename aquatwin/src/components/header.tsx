@@ -4,6 +4,7 @@ import { Button } from './ui/button'
 import NavLinks, { NavLink } from './ui/navlinks'
 import Dropdown from './ui/dropdown'
 import Container from './container'
+import Link from 'next/link'
 
 const Header: React.FC = () => {
   const links: NavLink[] = [
@@ -13,7 +14,7 @@ const Header: React.FC = () => {
   ];
 
   return (
-    <Container>
+    <Container >
       <nav className='h-12 flex items-center justify-between py-10 w-full'>
         <Image
           src="/aquatwin-logo.png"
@@ -33,10 +34,14 @@ const Header: React.FC = () => {
             <NavLinks links={links} />
           </div>
           <div className='hidden md:block'>
-          <Button variant="outline" >Contact us</Button>
+          <Button variant="outline" asChild>
+            <Link href="#contact">
+              Contact us
+            </Link>
+          </Button>
           </div>
         <div className='block md:hidden '>
-          <Dropdown />
+          <Dropdown links={links} />
         </div>
       </nav>
     </Container>

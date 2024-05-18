@@ -2,26 +2,30 @@ import React from 'react'
 import { Separator } from "@/components/ui/separator"
 import Image from 'next/image'
 import Link from 'next/link'
+import { NavLink } from './ui/navlinks'
+
 
 const Footer = () => {
-  const links = [
-    'home',
-    'problem',
-    'solution',
-    'team',
-    'contact'
-  ]
+
+  const links: NavLink[] = [
+    { text: 'Home', href: '#hero' },
+    { text: 'Problem Statement', href: '#problem-statement' },
+    { text: 'Solution', href: '#solution' },
+    { text: 'Team', href: '#team' },
+    { text: 'Contact', href: '#contact' },
+
+  ];
 
   return (
-    <section className='text-center p-4 bg-primary-1'>
+    <section className='text-center p-4 dark bg-primary-2 text-text'>
       <div className='mb-3'>
         <Image alt='logo' src="/aquatwin-logo.png" height={200} width={200} className='mx-auto'/>
         <div className='mt-7'>
           <ul className='flex flex-col sm:flex-row sm:justify-center gap-3 font-medium'>
             {links.map((link, index) => (
               <li key={index}>
-                <Link className='hover:text-btn hover:underline' href={`#{link}`}>
-                  {link.toUpperCase()}
+                <Link className='hover:text-btn hover:font-[20px]' href={link.href}>
+                  {link.text.toUpperCase()}
                 </Link>
               </li>
             ))}
