@@ -14,7 +14,7 @@ const Header: React.FC = () => {
   ];
 
   return (
-    <Container>
+    <Container >
       <nav className='h-12 flex items-center justify-between py-10 w-full'>
         <Image
           src="/aquatwin-logo.png"

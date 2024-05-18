@@ -24,7 +24,7 @@ const Footer = () => {
           <ul className='flex flex-col sm:flex-row sm:justify-center gap-3 font-medium'>
             {links.map((link, index) => (
               <li key={index}>
-                <Link className='hover:text-btn hover:underline' href={link.href}>
+                <Link className='hover:text-btn hover:font-[20px]' href={link.href}>
                   {link.text.toUpperCase()}
                 </Link>
               </li>

@@ -47,10 +47,7 @@ const Team = () => {
       <section id='team' className='space-y-8 w-full min-h-[80vh] place-items-center grid'>
         <div>
           <div className='space-y-2 text-center mb-20'>
-            <p className="text-text font-bold text-sm text-center mb-3">
-              Experienced
-            </p>
-            <h2 className='text-4xl font-bold text-title'>Meet Our Team</h2>
+            <h2 className='text-4xl font-bold text-title'>MEET THE <span className="text-blue-800">AQUA</span><span className="text-blue-400">TEAM</span></h2>
             <p className='md:text-lg'>Our team is made up of passionate individuals who are dedicated to making a difference in the world.</p>
           </div>
           <div className='flex flex-wrap justify-start gap-5 '>
@@ -61,6 +58,6 @@ const Team = () => {
         </div>
       </section>
     </ Container>
-      )
+  )
 }
 export default Team

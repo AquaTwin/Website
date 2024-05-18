@@ -69,9 +69,6 @@ const Contact = () => {
     <Container>
       <section className='bg-primary-1 flex flex-col items-center gap-5' id='contact'>
         <div>
-          <p className="font-bold text-sm text-center mb-3">
-            Connect
-          </p>
           <h1 className='text-4xl text-center font-bold text-title'>Get in Touch</h1>
         </div>
         <p className='text-sm md:text-lg text-center'>We&rsquo;d love to hear from you. Please reach out to us for any inquiries or collaborations.</p>
