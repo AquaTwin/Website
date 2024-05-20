@@ -62,7 +62,7 @@ const CustomParticles = () => {
           },
           links: {
             color: "#00bfff",
-            distance: 150,
+            distance: 100,
             enable: true,
             opacity: 1,
             width: 2,
