@@ -1,4 +1,5 @@
-import React from 'react'
+'use client';
+import React, { use } from 'react'
 import Image from 'next/image'
 import { Button } from './ui/button'
 import NavLinks, { NavLink } from './ui/navlinks'
@@ -8,7 +9,7 @@ import Link from 'next/link'
 
 const Header: React.FC = () => {
   const links: NavLink[] = [
-    { text: 'Problem Statement', href: '#problem-statement' },
+    { text: 'Problem ', href: '#problem-statement' },
     { text: 'Solution', href: '#solution' },
     { text: 'Team', href: '#team' },
   ];
@@ -22,13 +23,15 @@ const Header: React.FC = () => {
           height={20}
           alt='Logo'
           className='block md:hidden'
+          onClick={() => window.location.href = '/'}
         />
         <Image
           src="/aquatwin-logo.png"
           width={200}
           height={200}
-          alt='Logo'
+          alt='Logo'          
           className='hidden md:block'
+          onClick={() => window.location.href = '/'}
         />
           <div className='hidden md:block '>
             <NavLinks links={links} />
