@@ -21,15 +21,15 @@ const CustomParticles = () => {
   return (
     <Particles
       id="tsparticles"
-      className="absolute z-0 h-[100vh] w-full"
+      className="absolute z-0 h-[100vh] w-full bg-hero"
       init={particlesInit}
       loaded={particlesLoaded}
       options={{
         fullScreen: { enable: false },
         background: {
-          color: {
-            value: "#0000",
-          },
+          // color: {
+          //   value: "#00000000",
+          // },
         },
         fpsLimit: 120,
         interactivity: {

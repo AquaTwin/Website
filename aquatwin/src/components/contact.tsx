@@ -66,8 +66,8 @@ const Contact = () => {
   }
 
   return (
-    <Container>
-      <section className='bg-primary-1 flex flex-col items-center gap-5' id='contact'>
+    <Container className="bg-primary-1">
+      <section className='flex flex-col items-center gap-5' id='contact'>
         <div>
           <h1 className='text-4xl text-center font-bold text-title'>Get in Touch</h1>
         </div>

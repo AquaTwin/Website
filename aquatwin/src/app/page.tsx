@@ -5,10 +5,11 @@ import Partners from "@/components/partners";
 import Problem from "@/components/problem";
 import Solution from "@/components/solution";
 import Team from "@/components/team";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex flex-col bg-primary-1 space-y-16">
+    <main className="flex flex-col relative bg-primary-1 -z-20">
       <Hero />
       <Problem/>
       <Solution/>
@@ -16,7 +17,7 @@ export default function Home() {
       <Partners />
       <Contact />
       <Footer />
-      
+
     </main>
   );
 }

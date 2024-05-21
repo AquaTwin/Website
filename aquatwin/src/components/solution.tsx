@@ -28,8 +28,8 @@ const solutions = [
 
 const Solution = () => {
   return (
-    <Container>
-      <section className="flex-wrap bg-primary-1 md:text-lg" id="solution">
+    <Container className="bg-primary-1">
+      <section className="flex-wrap md:text-lg" id="solution">
         <h2 className="text-4xl font-bold text-title text-center mb-5">
           The Power of AquaTwin
         </h2>

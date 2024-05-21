@@ -1,3 +1,4 @@
+import { cn } from '@/lib/utils'
 import React from 'react'
 
 type ContainerProps = {
@@ -6,10 +7,13 @@ type ContainerProps = {
 }
 
 const Container = ({children, className}: ContainerProps) => {
-  const classname = `w-screen max-w-[1500px] mx-auto px-6 ${className}`
+  const classname = cn('w-screen px-6 py-7', className)
   return (
     <div className={classname}>
-      {children}
+      <div className='max-w-[1500px] mx-auto'>
+        {children}
+
+      </div>
     </div>
   )
 }
