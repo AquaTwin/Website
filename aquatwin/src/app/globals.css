@@ -92,7 +92,7 @@
       padding: 0;
     }
     body {
-      @apply text-foreground;
+      @apply text-foreground -z-30 relative;
     }
   }
 
