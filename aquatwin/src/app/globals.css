@@ -35,7 +35,8 @@
       --radius: 0.5rem;
 
       /* Custom colours */
-      --primary-1: 198, 87%, 91%;
+      /* --primary-1: 198, 87%, 91%; */
+      --primary-1: 198, 52%, 85%;
       --primary-2: 199, 93%, 76%;
 
       --btn: 199, 98%, 49%;
@@ -94,12 +95,6 @@
     body {
       @apply text-foreground;
     }
-  }
-
-  .bg-image {
-    background-image: linear-gradient(#070f29, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('./../../public/satelite-map.jpeg');
-    background-size: cover;
-    background-position: center;
   }
 
   .bg-hero {
