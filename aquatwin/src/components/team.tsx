@@ -43,7 +43,7 @@ const Team = () => {
   ]
 
   return (
-    <Container>
+    <Container className="bg-primary-1">
       <section id='team' className='space-y-8 w-full min-h-[80vh] place-items-center grid'>
         <div>
           <div className='space-y-2 text-center mb-20'>
