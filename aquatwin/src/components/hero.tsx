@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="w-full h-[90vh] sm:h-screen text-white  flex flex-col relative"
+      className="w-full h-[90vh] sm:h-screen text-white  flex flex-col relative select-none"
     >
       <CustomParticles />
       <div className="z-10 h-[100vh] flex flex-col">
