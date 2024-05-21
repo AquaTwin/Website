@@ -9,12 +9,11 @@ type ContainerProps = {
 const Container = ({children, className}: ContainerProps) => {
   const classname = cn('w-screen px-6 py-7', className)
   return (
-    <div className={classname}>
+    <section className={classname}>
       <div className='max-w-[1500px] mx-auto'>
         {children}
-
       </div>
-    </div>
+    </section>
   )
 }
 
