@@ -37,7 +37,7 @@ const Solution = () => {
           Discover the advanced capabilities of AquaTwin.
         </p>
 
-        <div className="space-y-12 mt-12 md:flex md:space-y-0 md:gap-8 ">
+        <div className="space-y-12 mt-12 md:flex md:space-y-0 md:gap-8 flex justify-between">
           {solutions.map(({ icon, title, description }, index) => (
             <SolutionCard
               key={index}

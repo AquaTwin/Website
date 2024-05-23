@@ -17,7 +17,7 @@ const Footer = () => {
   ];
 
   return (
-    <section className='text-center p-4 dark bg-primary-2 text-text'>
+    <section className='text-center p-4 dark bg-primary-2 text-text sticky bottom-0 left-0 -z-10'>
       <div className='mb-3'>
         <Image alt='logo' src="/aquatwin-logo.png" height={200} width={200} className='mx-auto'/>
         <div className='mt-7'>
