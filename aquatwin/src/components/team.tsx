@@ -6,7 +6,7 @@ import Container from './container'
 const Team = () => {
   const teamMembers = [
     {
-      image: '/members/karume.png',
+      image: '/members/karume.png' ,
       name: 'Daniel Karume',
       title: 'Team lead',
       github: 'https://github.com/Karume-lab',
