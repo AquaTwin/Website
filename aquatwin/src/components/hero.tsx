@@ -18,7 +18,9 @@ const Hero = () => {
             Bridging the gap in Transboundary River Basin Management
           </h1>
           <div className="flex justify-center w-full gap-10">
-            <Button>Learn more</Button>
+            <Button>
+              <Link href="#about">Learn more</Link>
+            </Button>
             <Button variant="outline" asChild>
               <Link href="#contact">Contact us</Link>
             </Button>

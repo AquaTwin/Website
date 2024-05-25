@@ -13,9 +13,11 @@ export default function Home() {
   return (
     <main className="flex flex-col relative bg-primary-1 -z-20">
       <Hero />
-      <About />
-      <Problem/>
-      <Solution/>
+      <div className="px-0 bg-gradient-to-b from-[#070f29] to-primary-1 ">
+        <About />
+        <Problem />
+      </div>
+      <Solution />
       <Team />
       <Partners />
       <Contact />

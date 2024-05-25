@@ -52,7 +52,7 @@ const Team = () => {
           </div>
           <div className='flex flex-wrap justify-start gap-5 '>
             {teamMembers.map((team, index) => (
-              <TeamCard key={index} {...team} />
+              <TeamCard key={index} {...team}/>
             ))}
           </div>
         </div>

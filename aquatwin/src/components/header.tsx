@@ -9,6 +9,7 @@ import Link from 'next/link'
 
 const Header: React.FC = () => {
   const links: NavLink[] = [
+    {text: 'About', href: '#about'},
     { text: 'Problem ', href: '#problem-statement' },
     { text: 'Solution', href: '#solution' },
     { text: 'Team', href: '#team' },
