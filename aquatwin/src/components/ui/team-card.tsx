@@ -12,7 +12,7 @@ type TeamCardProps = {
 const TeamCard = (team: TeamCardProps) => {
     return (
         <div className='max-w-[350px] text-center border pb-7 rounded mx-auto space-y-4 bg-background shadow-md overflow-hidden'>
-            <Image src={team.image} width={150} height={150} alt={team.name} className='w-full'/>
+            <Image src={team.image} width={150} height={150} alt={team.name} className='w-full transition duration-300 ease-in-out transform hover:scale-110 hover:z-10 hover:rounded'/>
             <div className='space-y-1 px-2'>
                 <h3 className='font-semibold'>{team.name}</h3>
                 <p>{team.title}</p>
