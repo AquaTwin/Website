@@ -1,58 +1,58 @@
 import React from "react";
 import { Cog, LineChart, ScatterChart } from "lucide-react";
+import Container from "./container";
+import SolutionCard from "./solution-card";
+import { Button } from "./ui/button";
+
 
 const solutions = [
   {
     icon: <Cog size={40} />,
-    title: "Sophosticated Technology for Industry Applications",
+    title: "Application of New Technology in Transboundary River Basin Modelling",
     description:
-      "Our digital twin model offers a comprehensive set of technical features and capabilities.",
+      "AquaTwin offers a comprehensive set of technical features and capabilities in modelling the transboundary river basins.",
   },
   {
     icon: <LineChart size={40} />,
-    title: "Real-Time Monitoring and Analysis",
+    title: "Real-Time Monitoring and Analysis of transboundary river basins",
     description:
       "Stay informed with real-time data and analysis provided by our digital twin model.",
   },
   {
     icon: <ScatterChart size={40} />,
-    title: " Predictive Modeling and Simulation",
+    title: "Predictive Modeling and Simulation of Flood Occurrences and Water Flow",
     description:
-      "Leverage predictive modeling and simulation to make informed decisions and optimize operations.",
+      "The project predicts flood occurrences as well as simulates water flow.",
   },
 ];
 
-import SolutionCard from "./solution-card";
-import { Button } from "./ui/button";
-
 const Solution = () => {
   return (
-    <div className="text-[22px] text-wrap flex-wrap px-5 py-16 bg-primary-1 w-screen">
-      <p className="text-text font-bold text-sm text-center mb-3">
-        Revolutionize
-      </p>
-      <h2 className="text-4xl font-bold text-title text-center mb-5">
-        Unleash the Power of Our Digital Twin Model
-      </h2>
-      <p className="text-sm text-center text-text">
-        Discover the advanced capabilities and industry applications of our
-        digital twin model.
-      </p>
+    <Container className="bg-primary-1">
+      <section className="flex-wrap md:text-lg" id="solution">
+        <h2 className="text-4xl font-bold text-title text-center mb-5">
+          The Power of <span className="text-blue-800">AQUA</span><span className="text-blue-400">TWIN</span>
+        </h2>
+        <p className="text-center text-text">
+          Discover the advanced capabilities of AquaTwin.
+        </p>
 
-      <div className="space-y-12 mt-12 md:flex md:space-y-0 md:gap-12">
-        {solutions.map(({ icon, title, description }, index) => (
-          <SolutionCard
-            key={index}
-            icon={icon}
-            title={title}
-            description={description}
-          />
-        ))}
-      </div>
-      {/* <div className="flex space-x-6 justify-center mt-6">
+        <div className="space-y-12 mt-12 md:flex md:space-y-0 md:gap-8 flex flex-wrap justify-between">
+          {solutions.map(({ icon, title, description }, index) => (
+            <SolutionCard
+              key={index}
+              icon={icon}
+              title={title}
+              description={description}
+            />
+          ))}
+        </div>
+        {/* <div className="flex space-x-6 justify-center mt-6">
         <Button variant={"outline"}>Learn More</Button>
       </div> */}
-    </div>
+      </section>
+    </Container>
+
   );
 };
 

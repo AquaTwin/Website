@@ -1,64 +1,63 @@
 import React from 'react'
 import TeamCard from './ui/team-card'
-import TestImage  from '../public/next.svg'
+import TestImage from '../public/next.svg'
+import Container from './container'
 
 const Team = () => {
   const teamMembers = [
     {
-    image: '/image.png',
-    name: 'John Doe',
-    title: 'Frontend Lead',
-    github: 'https://github.com',
-    linkedIn: 'https://linkedin.com'
-  },
-  {
-    image: '/image.png',
-    name: 'John Doe',
-    title: 'Frontend Lead',
-    github: 'https://github.com',
-    linkedIn: 'https://linkedin.com'
-  },
-  {
-    image: '/image.png',
-    name: 'John Doe',
-    title: 'Frontend Lead',
-    github: 'https://github.com',
-    linkedIn: 'https://linkedin.com'
-  },
-  {
-    image: '/image.png',
-    name: 'John Doe',
-    title: 'Frontend Lead',
-    github: 'https://github.com',
-    linkedIn: 'https://linkedin.com'
-  },
-  {
-    image: '/image.png',
-    name: 'John Doe',
-    title: 'Frontend Lead',
-    github: 'https://github.com',
-    linkedIn: 'https://linkedin.com'
-  },
-]
+      image: '/members/karume.png' ,
+      name: 'Daniel Karume',
+      title: 'Team lead',
+      github: 'https://github.com/Karume-lab',
+      linkedIn: 'https://www.linkedin.com/in/daniel-karume/'
+    },
+    {
+      image: '/members/dancoon.jpeg',
+      name: 'Ian Dancun',
+      title: 'Backend Developer',
+      github: 'https://github.com/dancoon',
+      linkedIn: 'https://linkedin.comin/dancoon'
+    },
+    {
+      image: '/members/javan.jpeg',
+      name: 'Javan Otieno',
+      title: 'Backend Developer',
+      github: 'https://github.com/Javan-Odhiambo',
+      linkedIn: 'https://linkedin.com/in/javan-otieno'
+    },
+    {
+      image: '/members/peaches.jpeg',
+      name: 'Peaches Njenga',
+      title: 'Frontend Developer',
+      github: 'https://github.com/Peachy-Njenga',
+      linkedIn: 'https://linkedin.com/in/peaches-njenga'
+    },
+    {
+      image: '/members/sandrah.jpeg',
+      name: 'Sandrah Lewa',
+      title: 'Frontend Developer',
+      github: 'https://github.com/comfortsandrah',
+      linkedIn: 'https://www.linkedin.com/in/sandrah-comfort/'
+    },
+  ]
 
   return (
-    <section className='space-y-8 w-full max-w-[1400px] mx-auto py-16'>
-      <div className='space-y-2 text-center'>
-      <p className="text-text font-bold text-sm text-center mb-3">
-        Experienced
-      </p>
-        <h2 className='text-4xl font-bold'>Meet Our Team</h2>
-        <p className='md:text-lg'>Our team is made up of passionate individuals who are dedicated to making a difference in the world.</p>
-      </div>
-      <div className='flex flex-wrap justify-start w-full gap-5'>
-        {teamMembers.map((team, index) => (
-          <TeamCard key={index} {...team}/>
-        ))}
-      </div>
-
-    </section>
-
+    <Container className="bg-primary-1">
+      <section id='team' className='space-y-8 w-full min-h-[80vh] place-items-center grid'>
+        <div>
+          <div className='space-y-2 text-center mb-20'>
+            <h2 className='text-4xl font-bold text-title'>Meet The <span className="text-blue-800">AQUA</span><span className="text-blue-400">TEAM</span></h2>
+            <p className='md:text-lg'>Our team is made up of passionate individuals who are dedicated to making a difference in the world.</p>
+          </div>
+          <div className='flex flex-wrap justify-start gap-5 '>
+            {teamMembers.map((team, index) => (
+              <TeamCard key={index} {...team} />
+            ))}
+          </div>
+        </div>
+      </section>
+    </ Container>
   )
 }
-
 export default Team

@@ -1,7 +1,6 @@
 @tailwind base;
   @tailwind components;
   @tailwind utilities;
-
   @layer base {
     :root {
       --background: 199 77% 96%;
@@ -36,7 +35,8 @@
       --radius: 0.5rem;
 
       /* Custom colours */
-      --primary-1: 198, 87%, 91%;
+      /* --primary-1: 198, 87%, 91%; */
+      --primary-1: 198, 52%, 85%;
       --primary-2: 199, 93%, 76%;
 
       --btn: 199, 98%, 49%;
@@ -87,13 +87,18 @@
       --navlink: 0, 0%, 100%;
       --btn: 199, 98%, 49%;
     }
-  } 
-
-  @layer base {
     * {
       @apply border-border;
+      margin: 0;
+      padding: 0;
     }
     body {
-      @apply bg-background text-foreground;
+      @apply text-foreground -z-30 relative;
     }
+  }
+
+  .bg-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0.5)), url('./../../public/world.jpg');
+    background-size: cover;
+    background-position: center;
   }
