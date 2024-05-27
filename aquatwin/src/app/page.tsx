@@ -1,5 +1,5 @@
 import About from "@/components/about";
-import Contact from "@/components/contact";
+// import Contact from "@/components/contact";
 import Footer from "@/components/footer";
 import Hero from "@/components/hero";
 import Partners from "@/components/partners";
@@ -20,7 +20,7 @@ export default function Home() {
       <Solution />
       <Team />
       <Partners />
-      <Contact />
+      {/* <Contact /> */}
       <Footer />
 
     </main>
