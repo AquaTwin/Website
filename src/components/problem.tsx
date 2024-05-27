@@ -14,12 +14,12 @@ const Problem = () => {
           </h2>
           <p className="md:text-lg">
           Kenya faces a severe water crisis. Over 80% of the land is arid or semi-arid, 
-          leading to uneven water distribution. One-third of Kenya's water comes from shared 
+          leading to uneven water distribution. One-third of Kenya&rsquo;s water comes from shared 
           transboundary rivers and the rapidly growing population 
           strains these resources, which leads to conflict between countries sharing these resources. 
           Climate change disrupts weather patterns with 
           increasingly severe floods and droughts. To address these challenges, we need a data-driven 
-          approach to managing Kenya's water resources. 
+          approach to managing Kenya&rsquo;s water resources. 
           </p>
           
         </div>
