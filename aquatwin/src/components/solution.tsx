@@ -4,25 +4,26 @@ import Container from "./container";
 import SolutionCard from "./solution-card";
 import { Button } from "./ui/button";
 
-
 const solutions = [
   {
     icon: <Cog size={40} />,
-    title: "Application of New Technology in Transboundary River Basin Modelling",
+    title:
+      "Application of New Technology in Transboundary River Basin Modelling",
     description:
-      "AquaTwin offers a comprehensive set of technical features and capabilities in modelling the transboundary river basins.",
+      "Digital twins create detailed virtual models of river basins in real-time monitoring and simulation of water dynamics, utilizing continuous satellite data for comprehensive hydrological insights.",
   },
   {
     icon: <LineChart size={40} />,
     title: "Real-Time Monitoring and Analysis of transboundary river basins",
     description:
-      "Stay informed with real-time data and analysis provided by our digital twin model.",
+      "Real-time monitoring and analysis of transboundary river basins use advanced technology, including satellite data, to provide immediate insights into water dynamics.",
   },
   {
     icon: <ScatterChart size={40} />,
-    title: "Predictive Modeling and Simulation of Flood Occurrences and Water Flow",
+    title:
+      "Predictive Modeling and Simulation of Flood Occurrences and Water Flow",
     description:
-      "The project predicts flood occurrences as well as simulates water flow.",
+      "Provides early warnings, supporting informed decision-making, promoting sustainable management amidst climate change, population growth, and inter-state conflicts.",
   },
 ];
 
@@ -31,7 +32,8 @@ const Solution = () => {
     <Container className="bg-primary-1">
       <section className="flex-wrap md:text-lg" id="solution">
         <h2 className="text-4xl font-bold text-title text-center mb-5">
-          The Power of <span className="text-blue-800">AQUA</span><span className="text-blue-400">TWIN</span>
+          The Power of <span className="text-blue-800">AQUA</span>
+          <span className="text-blue-400">TWIN</span>
         </h2>
         <p className="text-center text-text">
           Discover the advanced capabilities of AquaTwin.
@@ -52,7 +54,6 @@ const Solution = () => {
       </div> */}
       </section>
     </Container>
-
   );
 };
 
