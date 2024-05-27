@@ -14,7 +14,7 @@ on:
 
 defaults:
   run:
-    working-directory: web
+    working-directory: aquatwin
     
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
