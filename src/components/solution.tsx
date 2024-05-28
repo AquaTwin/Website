@@ -10,19 +10,20 @@ const solutions = [
     icon: <Cog size={40} />,
     title: "Application of New Technology in Transboundary River Basin Modelling",
     description:
-      "AquaTwin offers a comprehensive set of technical features and capabilities in modelling the transboundary river basins.",
+      "Digital twin technology to model Kenya's transboundary river basins, offering detailed insights into water dynamics for better resource management",
   },
   {
     icon: <LineChart size={40} />,
     title: "Real-Time Monitoring and Analysis of transboundary river basins",
     description:
-      "Stay informed with real-time data and analysis provided by our digital twin model.",
+     "Integration of satellite data with digital twins to monitor water flow, quality, and usage in real-time, enabling better observation and management.",
+      
   },
   {
     icon: <ScatterChart size={40} />,
     title: "Predictive Modeling and Simulation of Flood Occurrences and Water Flow",
     description:
-      "The project predicts flood occurrences as well as simulates water flow.",
+      "Using machine learning to accurately predict floods and water flow patterns, aiding in proactive flood management and water distribution.",
   },
 ];
 

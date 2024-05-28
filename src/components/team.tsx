@@ -1,12 +1,39 @@
+'use client'
 import React from 'react'
 import TeamCard from './ui/team-card'
 import TestImage from '../public/next.svg'
 import Container from './container'
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+import AutoScroll from 'embla-carousel-auto-scroll'
+
+
+
+
 
 const Team = () => {
   const teamMembers = [
     {
-      image: '/members/karume.png' ,
+      image: '/members/william.jpg',
+      name: 'Dr. William Murithi',
+      title: 'Strategy Lead',
+      // github: 'https://github.com/Karume-lab',
+      linkedIn: 'https://www.linkedin.com/in/william-murithi-ph-d-fhea-cmbe-8a169425/'
+    },
+    {
+      image: '/members/nderu.jpg',
+      name: 'Dr. Lawrence Nderu',
+      title: 'Principal Investigator',
+      // github: 'https://github.com/Karume-lab',
+      linkedIn: 'https://www.linkedin.com/in/dr-lawrence-nderu/'
+    },
+    {
+      image: '/members/karume.png',
       name: 'Daniel Karume',
       title: 'Team lead',
       github: 'https://github.com/Karume-lab',
@@ -27,7 +54,7 @@ const Team = () => {
       linkedIn: 'https://linkedin.com/in/javan-otieno'
     },
     {
-      image: '/members/peaches.jpeg',
+      image: '/members/peaches.jpg',
       name: 'Peaches Njenga',
       title: 'Frontend Developer',
       github: 'https://github.com/Peachy-Njenga',
@@ -50,14 +77,39 @@ const Team = () => {
             <h2 className='text-4xl font-bold text-title'>Meet The <span className="text-blue-800">AQUA</span><span className="text-blue-400">TEAM</span></h2>
             <p className='md:text-lg'>Our team is made up of passionate individuals who are dedicated to making a difference in the world.</p>
           </div>
-          <div className='flex flex-wrap justify-start gap-5 '>
+          <div className=' h-fit hidden md:block'>
+            <Carousel opts={{
+              loop: true,
+            }}
+              plugins={[
+                AutoScroll({
+                  stopOnInteraction: false,
+                  stopOnMouseEnter: true,
+                  speed: 1,
+                  stopOnFocusin: true,
+                  startDelay: 0,
+                })
+
+              ]}>
+              <CarouselContent >
+                {teamMembers.map((team, index) => (<CarouselItem className=" pl-3 md:basis-1/3 lg:basis-1/4 w-40" ><TeamCard key={index} {...team} /></CarouselItem>))}
+              </CarouselContent>
+              {/* <CarouselPrevious />
+              <CarouselNext /> */}
+            </Carousel>
+          </div>
+
+
+          <div className='flex flex-wrap justify-start gap-5 md:hidden'>
             {teamMembers.map((team, index) => (
-              <TeamCard key={index} {...team}/>
+              <TeamCard key={index} {...team} />
             ))}
           </div>
+
+
         </div>
-      </section>
-    </ Container>
+    </section>
+    </ Container >
   )
 }
 export default Team
