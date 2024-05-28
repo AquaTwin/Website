@@ -14,7 +14,7 @@ const Footer = () => {
   ];
 
   return (
-    <section className="p-4 px-8 dark bg-primary-2 text-text sticky bottom-0 left-0 -z-10 w-screen text-center md:text-left">
+    <section className="p-4 px-8 dark bg-primary-2 text-text text-center md:text-left">
       <div className="mb-3 flex flex-col md:flex-row justify-around gap-3">
         <div className=" flex flex-col items-center md:items-start">
           <Image alt="logo" src="/aquatwin-logo.png" height={200} width={200} />
