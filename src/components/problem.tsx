@@ -8,7 +8,7 @@ const Problem = () => {
         className="flex flex-col justify-center items-center h-[90vh] md:h-[75vh]"
         id="problem-statement"
       >
-        <div className="bg-[#F8F8F8] p-8 md:w-2/3 mx-2 shadow rounded-md md:transition duration-300 ease-in-out transform md:hover:scale-105 ">
+        <div className="bg-[#F8F8F8] p-8 md:w-2/3 mx-2 shadow rounded-md md:transition duration-300 ease-in-out transform">
           <h2 className="text-4xl font-bold text-title text-center mb-5 z-10">
             Problem Statement
           </h2>
