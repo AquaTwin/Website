@@ -55,7 +55,7 @@ const TextReveal: React.FC<TextRevealProps> = ({ text, className }) => {
     <h2
       ref={textRef}
       style={{ overflow: "hidden" }}
-      className={` text-4xl font-bold text-title text-center mb-5 ${className}`}
+      className={` text-2xl md:text-4xl font-bold text-title text-center mb-3 md:mb-5 ${className}`}
     >
       {text}
     </h2>
