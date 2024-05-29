@@ -10,25 +10,98 @@ import {
     Carousel,
     CarouselContent,
     CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
 } from "@/components/ui/carousel"
+import { BadgeCheck } from 'lucide-react';
 
 
 const AboutPage = () => {
+    const challenges = [
+        {
+            "title": "Water resource management",
+            // "description": "Ensuring the sustainable use and distribution of water resources to meet current and future needs."
+        },
+        {
+            "title": "Flood control",
+            // "description": "Implementing measures to prevent or reduce the impact of flooding on communities and infrastructure."
+        },
+        {
+            "title": "Environmental protection",
+            // "description": "Preserving and restoring natural ecosystems to maintain biodiversity and ecological health."
+        },
+        {
+            "title": "Transboundary cooperation",
+            // "description": "Collaborating across political borders to manage shared water resources and address common environmental challenges."
+        }
+    ]
+
+    const solutions = [
+        {
+            "title": "Advanced water management tool",
+            "description": "Developing an application that offers a decision support system for water resources management."
+        },
+        {
+            "title": "International cooperation",
+            "description": "Fostering collaboration between Kenya and neighbouring nations to address water challenges."
+        },
+        {
+            "title": "Environmental protection",
+            "description": "Implementing strategies to safeguard natural ecosystems and maintain environmental sustainability."
+        },
+        {
+            "title": "Flood prediction",
+            "description": "Monitoring water flow, water usage, and water quality to predict floods and mitigate their impact."
+        }
+    ]
+
+    const riverBasins = [
+        {
+            name: 'Omo River Basin',
+            image: '/kenya-ethiopia.jpeg'
+        },
+        {
+            name: 'Jubba Shabelle River Basin',
+            image: '/kenya-ethiopia-somalia.jpeg'
+        },
+        {
+            name: 'Mara River Basin',
+            image: '/kenya-tanzania.jpeg'
+        },
+
+    ]
+
     return (
         <main className='bg-primary-1'>
             <Header />
             <h1 className='text-center text-title text-5xl font-semibold'>About AQUATWIN</h1>
             <section>
                 <Container>
-                    <div className='md:flex gap-7'>
-                        <div className=''>
-                            <Image src='/digital-twin.jpeg' alt="digital twin" width="900" height="400" className='w-full'></Image>
-                        </div>
-                        <div>
+                    <div className=''>
+
+                        <div className='mb-4'>
                             <h2 className='text-title text-3xl font-semibold'>What is a digital twin</h2>
-                            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur eaque cupiditate vero dolore atque? Laboriosam omnis aperiam eaque, libero fuga sequi molestiae sed error molestias quidem officia quasi exercitationem non.</p>
+                            <p>
+                                A digital twin model is a computer-made copy of a real-world object, system, or process. This virtual version uses data from the real thing to help us understand how it works, find and fix problems, and make better decisions. By simulating the real object, we can test changes and improvements without affecting the real world.
+                            </p>
+                        </div>
+                        <div className='md:flex gap-4'>
+                            <div className=''>
+                                <Image src='/digital-twin.jpeg' alt="digital twin" width="400" height="400" className='w-full'></Image>
+                            </div>
+                            <div className='md:w-2/3'>
+                                <p>
+                                    Physical data is collected by sensors and satellites which orbit the Earth. This data is depicted by the word “Data” in the upper left corner of the diagram.
+                                </p>
+                                <p>
+                                    This physical data is then transmitted to the digital twin, which is a computer program that uses the collected data to create a virtual replica of the physical system.
+                                </p>
+                                <p>
+                                    The digital twin analyses the data and generates insights, which are shown on the right side of the diagram. These insights can inform decision-making and improvements to the physical system.
+
+                                    Based on the insights gleaned from the data, decisions are made and interventions are implemented in the real world. These interventions can be adjustments to the physical system or changes in how it is operated.
+
+                                    The effects of these decisions are then monitored and new data is collected, which begins the cycle anew.
+                                </p>
+                            </div>
                         </div>
 
                     </div>
@@ -36,13 +109,18 @@ const AboutPage = () => {
             </section>
             <section>
                 <Container >
-                    <div className='relative gap-7 mx-auto max-h-[450px] lg:max-h-[600px] overflow-clip'>
+                    <div className='relative gap-7 mx-auto h-fit'>
 
-                        <div className='absolute flex flex-col items-center justify-center z-10 bg-[#37373799] text-white w-full h-full'>
-                            <h2>Challenges</h2>
-                            <p>Lorem, ipsum dolor Lorem, ipsum..</p>
-                            <p>Lorem, ipsum dolor Lorem, ipsum..</p>
-                            <p>Lorem, ipsum dolor Lorem, ipsum..</p>
+                        <div className='absolute top-0 left-0 flex flex-col justify-center z-10 bg-[#373737c4] text-white w-full h-full'>
+                            <h2 className='text-3xl text-center font-semibold mb-6'>Challenges</h2>
+                            <ul className=' max-w-[650px] mb-3 mx-auto list-disc' >
+                                {
+                                    challenges.map((challenge, index) => (
+                                        <li className='text-left text-lg' key={index}>{challenge.title}</li>
+                                        // <p>{challenge.description}</p>
+                                    ))
+                                }
+                            </ul>
                         </div>
                         <div>
                             <Carousel
@@ -79,27 +157,34 @@ const AboutPage = () => {
 
             <section>
                 <Container>
-                    <h2 className='text-center text-title text-3xl font-semibold'>Our solution</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil tempora nobis, ipsum laudantium dolorum quasi Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, libero deleniti fugiat dolorum ex aspernatur molestias possimus commodi voluptate! Natus velit dicta dolor quidem accusantium! commodi ducimus rem obcaecati voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, eius facere. Similique, fuga voluptatibus dicta non itaque illum necessitatibus impedit.</p>
-
+                    <h2 className='text-center text-title text-3xl font-semibold mb-6'>Our solution</h2>
+                    {
+                        solutions.map((solution, index) => (
+                            <div className='flex gap-2' key={index}>
+                                <BadgeCheck stroke='green' className='w-8 h-8'/>
+                                <div className="mb-4" >
+                                    <h3 className='font-semibold'>{solution.title}</h3>
+                                    <p>{solution.description}</p>
+                                </div>
+                            </div>
+                        ))
+                    }
                 </Container>
             </section>
 
             <section>
                 <Container>
-                    <h2 className='text-center text-title text-3xl font-semibold'>River basins of interest</h2>
-                    <div className='flex flex-wrap justify-around'>
-                        <h2>Omo ---- River basin</h2>
-                        <h2>Omo ---- River basin</h2>
-                        <h2>Omo ---- River basin</h2>
-                        <h2>Omo ---- River basin</h2>
-                        <h2>Omo ---- River basin</h2>
-
+                    <h2 className='text-center text-title text-3xl font-semibold mb-6'>River basins of interest</h2>
+                    <div className='flex flex-wrap justify-between gap-y-6'>
+                        {riverBasins.map((riverBasin, index) => (
+                            <div key={index} className='md:w-[30%] max-w-[500px] mx-auto'>
+                                <Image src={riverBasin.image} alt={riverBasin.name} width="300" height="200" className='w-full'></Image>
+                                <p className='text-center'>{riverBasin.name}</p>
+                            </div>
+                        ))}
                     </div>
-
                 </Container>
             </section>
-
             <Footer />
         </main>
     )
