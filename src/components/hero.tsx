@@ -19,11 +19,11 @@ const Hero = () => {
           </h1>
           <div className="flex justify-center w-full gap-10">
             <Button>
-              <Link href="#about">Learn more</Link>
+              <Link href="/about">Learn more</Link>
             </Button>
-            <Button variant="outline" asChild>
+            {/* <Button variant="outline" asChild>
               <Link href="#contact">Contact us</Link>
-            </Button>
+            </Button> */}
           </div>
         </div>
       </div>
