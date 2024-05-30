@@ -46,13 +46,13 @@ const Header: React.FC = () => {
             <div className='hidden md:block '>
               <NavLinks links={links} />
             </div>
-            <div className='hidden md:block'>
-              {/* <Button variant="outline" asChild>
+            {/* <div className='hidden md:block'>
+              <Button variant="outline" asChild>
                 <Link href="#contact">
                   Contact us
                 </Link>
-              </Button> */}
-            </div>
+              </Button>
+            </div> */}
             <div className='block md:hidden '>
               <Dropdown links={links} />
             </div>
