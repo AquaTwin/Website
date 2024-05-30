@@ -8,7 +8,7 @@ function NotFoundPage() {
       <h2 className="text-7xl text-title">404</h2>
       <h3 className="text-2xl text-title mt-3">Page Not Found</h3>
       <p className="text-lg opacity-65 mt-4 text-title">
-        Sorry we cant find the page you're looking for.
+        Sorry we cant find the page you&apos;re looking for.
       </p>
       <Button className="rounded-full mt-5" asChild>
         <Link href={"/"}>Back to Home</Link>
