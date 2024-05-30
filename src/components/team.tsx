@@ -98,7 +98,7 @@ const Team = () => {
             >
               <CarouselContent>
                 {teamMembers.map((team, index) => (
-                  <CarouselItem className=" pl-3 md:basis-1/3 lg:basis-1/4 w-40">
+                  <CarouselItem key={index} className="pl-3 md:basis-1/3 lg:basis-1/4 w-40">
                     <TeamCard key={index} {...team} />
                   </CarouselItem>
                 ))}
