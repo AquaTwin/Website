@@ -3,7 +3,7 @@
 const isProd = process.env.NODE_ENV === 'production'
 const nextConfig = {
     output: 'export',
-    basePath: isProd ? 'Website': '',
+    // basePath: isProd ? 'Website': '',
     
 
     // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
