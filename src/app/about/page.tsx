@@ -56,15 +56,15 @@ const AboutPage = () => {
     const riverBasins = [
         {
             name: 'Omo River Basin',
-            image: '/kenya-ethiopia.jpeg'
+            image: '/kenya-ethiopia.jpg'
         },
         {
             name: 'Jubba Shabelle River Basin',
-            image: '/kenya-ethiopia-somalia.jpeg'
+            image: '/kenya-ethiopia-somalia.jpg'
         },
         {
             name: 'Mara River Basin',
-            image: '/kenya-tanzania.jpeg'
+            image: '/kenya-tanzania.jpg'
         },
 
     ]
@@ -72,7 +72,7 @@ const AboutPage = () => {
     return (
         <main className='bg-primary-1'>
             <Header />
-            <h1 className='text-center text-title text-5xl font-semibold'>About AQUATWIN</h1>
+            <h1 className='text-center text-title text-5xl font-semibold mt-5'>About AQUATWIN</h1>
             <section>
                 <Container>
                     <div className=''>
@@ -85,9 +85,9 @@ const AboutPage = () => {
                         </div>
                         <div className='md:flex gap-4'>
                             <div className=''>
-                                <Image src='/digital-twin.jpeg' alt="digital twin" width="400" height="400" className='w-full'></Image>
+                                <Image src='/digital-twin.png' alt="digital twin" width="400" height="400" className='w-full'></Image>
                             </div>
-                            <div className='md:w-2/3'>
+                            {/* <div className='md:w-2/3'>
                                 <p>
                                     Physical data is collected by sensors and satellites which orbit the Earth. This data is depicted by the word “Data” in the upper left corner of the diagram.
                                 </p>
@@ -101,7 +101,7 @@ const AboutPage = () => {
 
                                     The effects of these decisions are then monitored and new data is collected, which begins the cycle anew.
                                 </p>
-                            </div>
+                            </div> */}
                         </div>
 
                     </div>
