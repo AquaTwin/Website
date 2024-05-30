@@ -1,4 +1,4 @@
-import About from "@/components/about";
+// import About from "@/components/about";
 import Contact from "@/components/contact";
 import Footer from "@/components/footer";
 import Hero from "@/components/hero";
@@ -14,7 +14,7 @@ export default function Home() {
     <main className="flex flex-col relative bg-primary-1 -z-20">
       <Hero />
       <div className="px-0 bg-gradient-to-b from-[#070f29] to-primary-1 ">
-        <About />
+        {/* <About /> */}
         <Problem />
       </div>
       <Solution />
