@@ -6,11 +6,12 @@ import { NavLink } from "./ui/navlinks";
 
 const Footer = () => {
   const links: NavLink[] = [
-    { text: "Home", href: "#hero" },
-    { text: "Problem", href: "#problem-statement" },
-    { text: "Solution", href: "#solution" },
-    { text: "Team", href: "#team" },
-    { text: "Contact", href: "#contact" },
+    { text: "Home", href: "/#hero" },
+    { text: "About", href: "/about"},
+    { text: "Problem", href: "/#problem-statement" },
+    { text: "Solution", href: "/#solution" },
+    { text: "Team", href: "/#team" },
+    // { text: "Contact", href: "/#contact" },
   ];
 
   return (

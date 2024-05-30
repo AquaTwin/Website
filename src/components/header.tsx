@@ -7,13 +7,20 @@ import Dropdown from './ui/dropdown'
 import Container from './container'
 import Link from 'next/link'
 
+import { usePathname } from 'next/navigation';
+
 const Header: React.FC = () => {
   const links: NavLink[] = [
-    {text: 'About', href: '#about'},
-    { text: 'Problem ', href: '#problem-statement' },
-    { text: 'Solution', href: '#solution' },
-    { text: 'Team', href: '#team' },
+    { text: 'About', href: '/about' },
+    { text: 'Problem ', href: '/#problem-statement' },
+    { text: 'Solution', href: '/#solution' },
+    { text: 'Team', href: '/#team' },
   ];
+
+  const path = usePathname();
+
+  const isAboutPage = path === '/about';
+
 
   return (
     <Container className='py-0'>
@@ -30,23 +37,36 @@ const Header: React.FC = () => {
           src="/aquatwin-logo.png"
           width={200}
           height={200}
-          alt='Logo'          
+          alt='Logo'
           className='hidden md:block'
           onClick={() => window.location.href = '/'}
         />
-          <div className='hidden md:block '>
-            <NavLinks links={links} />
-          </div>
+        {!isAboutPage ? (
+          <>
+            <div className='hidden md:block '>
+              <NavLinks links={links} />
+            </div>
+            <div className='hidden md:block'>
+              {/* <Button variant="outline" asChild>
+                <Link href="#contact">
+                  Contact us
+                </Link>
+              </Button> */}
+            </div>
+            <div className='block md:hidden '>
+              <Dropdown links={links} />
+            </div>
+          </>
+        ) : (
           <div className='hidden md:block'>
-          <Button variant="outline" asChild>
-            <Link href="#contact">
-              Contact us
-            </Link>
-          </Button>
+            <Button variant="outline" asChild>
+              <Link href="/">
+                Back
+              </Link>
+            </Button>
           </div>
-        <div className='block md:hidden '>
-          <Dropdown links={links} />
-        </div>
+        )
+        }
       </nav>
     </Container>
   )
