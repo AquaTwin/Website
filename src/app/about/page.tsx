@@ -106,40 +106,54 @@ const AboutPage = () => {
                 <Image
                   src="/small_screen.png"
                   alt="digital twin"
-                  className="w-full md:hidden"
+                  width={400}
+                  height={400}
+                  className=" w-[400px] h-auto md:hidden"
                 ></Image>
                 <Image
-                  src="/card1.png"
+                  src="/Card1.png"
                   alt="step 1"
-                  className="w-[400px] md:hidden"
+                  width={300}
+                  height={100}
+                  className=" mx-auto h-auto md:hidden"
                 ></Image>
                 <Image
-                  src="/card2.png"
+                  src="/Card2.png"
                   alt="step 2"
-                  className="w-[400px] md:hidden"
+                  width={300}
+                  height={100}
+                  className=" mx-auto h-auto md:hidden"
                 ></Image>
                 <Image
-                  src="/card3.png"
+                  src="/Card3.png"
                   alt="step 3"
-                  className="w-[400px] md:hidden"
+                  width={300}
+                  height={100}
+                  className=" mx-auto h-auto md:hidden"
                 ></Image>
                 <Image
-                  src="/card4.png"
+                  src="/Card4.png"
                   alt="step 4"
-                  className="w-[400px] md:hidden"
+                  width={300}
+                  height={100}
+                  className=" mx-auto h-auto md:hidden"
                 ></Image>
                 <Image
-                  src="/card5.png"
+                  src="/Card5.png"
                   alt="step 5"
-                  className="w-[400px] md:hidden"
+                  width={300}
+                  height={100}
+                  className=" mx-auto h-auto md:hidden"
                 ></Image>
               </div>
 
               <div className="flex items-center justify-center">
                 <Image
-                  src="/large_screen.png"
+                  src="/Large_screen.png"
                   alt="digital twin"
-                  className="w-full hidden md:block"                
+                  width={400}
+                  height={400}
+                  className="w-full hidden md:block mt-4"
                 ></Image>
               </div>
               {/* <div className='md:w-2/3'>
