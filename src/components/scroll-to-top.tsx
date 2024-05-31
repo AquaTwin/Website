@@ -29,7 +29,7 @@ export default function ScrollToTopBtn() {
             {
                 (show) ? (
                     <div className="fixed bottom-0 right-0 mb-14 mr-6 z-30">
-                    <button onClick={jumpToTop} className="bg-black opacity-7 text-white rounded-full p-2 hover:bg-gray-900 transition">
+                    <button onClick={jumpToTop} className="bg-black opacity-7 text-white rounded-full p-2 hover:bg-gray-900 transition" aria-label="Scroll to top">
                         <Rocket className=" -rotate-45 text-primary-1"/>
                     </button>
                 </div>
