@@ -31,7 +31,7 @@ const solutions = [
 const Solution = () => {
   return (
     <Container className="bg-primary-1">
-      <section className="flex-wrap md:text-lg" id="solution">
+      <section className="flex-wrap md:text-lg min-h-[60vh]" id="solution">
         <TextReveal text="The Power of AQUATWIN" />
 
         <p className="text-center text-text">
