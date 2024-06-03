@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/carousel";
 import AutoScroll from "embla-carousel-auto-scroll";
 import TextReveal from "./textreveal";
+import Autoplay from "embla-carousel-autoplay";
 
 const Team = () => {
   const teamMembers = [
@@ -19,7 +20,6 @@ const Team = () => {
       image: "/members/william.jpg",
       name: "Dr. William Murithi",
       title: "Strategy Lead",
-      // github: 'https://github.com/Karume-lab',
       linkedIn:
         "https://www.linkedin.com/in/william-murithi-ph-d-fhea-cmbe-8a169425/",
     },
@@ -27,7 +27,6 @@ const Team = () => {
       image: "/members/nderu.jpg",
       name: "Dr. Lawrence Nderu",
       title: "Principal Investigator",
-      // github: 'https://github.com/Karume-lab',
       linkedIn: "https://www.linkedin.com/in/dr-lawrence-nderu/",
     },
     {
@@ -87,13 +86,19 @@ const Team = () => {
                 loop: true,
               }}
               plugins={[
-                AutoScroll({
-                  stopOnInteraction: false,
+                // AutoScroll({
+                //   stopOnInteraction: false,
+                //   stopOnMouseEnter: true,
+                //   speed: 1,
+                //   startDelay: 0,
+                // }),
+                Autoplay({
+                  delay: 2000,
                   stopOnMouseEnter: true,
-                  speed: 1,
-                  stopOnFocusin: true,
-                  startDelay: 0,
-                }),
+                  stopOnInteraction: false,
+
+                })
+                
               ]}
             >
               <CarouselContent>
@@ -103,8 +108,8 @@ const Team = () => {
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              {/* <CarouselPrevious />
-              <CarouselNext /> */}
+              <CarouselPrevious />
+              <CarouselNext />
             </Carousel>
           </div>
 
