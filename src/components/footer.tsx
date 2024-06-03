@@ -42,7 +42,7 @@ const Footer = () => {
         </div>
         <div className=" flex flex-col  items-center">
           <h3 className=" font-bold text-lg mb-1">Partners</h3>
-          <div className=" flex">
+          {/* <div className=" flex">
             <span className=" mr-3 min-w-14">
               {" "}
               <a href="https://www.jkuat.ac.ke/" target="_blank" aria-label="Jkuat Web Link">
@@ -95,7 +95,7 @@ const Footer = () => {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
           <div className=" flex mt-3">
             <span className=" mr-3 min-w-14">
               <a href="https://jhubafrica.com/" target="_blank" aria-label="Jhub Web Link">
