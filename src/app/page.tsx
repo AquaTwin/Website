@@ -2,7 +2,7 @@
 import Contact from "@/components/contact";
 import Footer from "@/components/footer";
 import Hero from "@/components/hero";
-import Partners from "@/components/partners";
+// import Partners from "@/components/partners";
 import Problem from "@/components/problem";
 import Solution from "@/components/solution";
 import Team from "@/components/team";
@@ -19,7 +19,7 @@ export default function Home() {
       </div>
       <Solution />
       <Team />
-      <Partners />
+      {/* <Partners /> */}
       {/* <Contact /> */}
       <Footer />
 
