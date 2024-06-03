@@ -70,7 +70,7 @@ const Team = () => {
     <Container className="bg-primary-1">
       <section
         id="team"
-        className="space-y-8 w-full min-h-[80vh] place-items-center grid"
+        className="min-h-[60vh]"
       >
         <div>
           <div className="space-y-2 text-center mb-20">
@@ -101,9 +101,9 @@ const Team = () => {
                 
               ]}
             >
-              <CarouselContent>
+              <CarouselContent className="-ml-20">
                 {teamMembers.map((team, index) => (
-                  <CarouselItem key={index} className="pl-3 md:basis-1/3 lg:basis-1/4 w-40">
+                  <CarouselItem key={index} className="pl-1/5 md:basis-1/3 lg:basis-1/4 w-40">
                     <TeamCard key={index} {...team} />
                   </CarouselItem>
                 ))}

@@ -28,6 +28,7 @@
     "react": "^18",
     "react-dom": "^18",
     "react-hook-form": "^7.51.4",
+    "react-scroll-up": "^1.4.0",
     "react-tsparticles": "^2.12.2",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7",
