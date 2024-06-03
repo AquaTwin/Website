@@ -11,7 +11,6 @@ const Footer = () => {
     { text: "Problem", href: "/#problem-statement" },
     { text: "Solution", href: "/#solution" },
     { text: "Team", href: "/#team" },
-    // { text: "Contact", href: "/#contact" },
   ];
 
   return (
@@ -19,11 +18,6 @@ const Footer = () => {
       <div className="mb-3 flex flex-col md:flex-row justify-around gap-3">
         <div className=" flex flex-col items-center md:items-start">
           <Image alt="logo" src="/aquatwin-logo.png" height={200} width={200} />
-          <p className=" hidden md:block max-w-[300px] text-sm">
-            The AquaTwin project aims to revolutionize the management of
-            transboundary river basins in Kenya by integrating satellite data
-            and digital twin technologies.
-          </p>
         </div>
         <div>
           <h3 className=" font-bold text-lg mb-1">Links</h3>
@@ -42,60 +36,6 @@ const Footer = () => {
         </div>
         <div className=" flex flex-col  items-center">
           <h3 className=" font-bold text-lg mb-1">Partners</h3>
-          {/* <div className=" flex">
-            <span className=" mr-3 min-w-14">
-              {" "}
-              <a href="https://www.jkuat.ac.ke/" target="_blank" aria-label="Jkuat Web Link">
-                <Image
-                  alt="JKUAT"
-                  src="/partners/jkuat.png"
-                  height={40}
-                  width={45}
-                />
-              </a>
-            </span>
-            <ul className=" flex gap-3 items-center">
-              <li>
-                <a
-                  href="https://www.facebook.com/DiscoverJKUAT"
-                  target="_blank" aria-label="Jkuat facebook Link"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 512 512"
-                    className="h-[20px] w-[20px] fill-[#809cce]"
-                  >
-                    <path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z" />
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="https://x.com/discoverjkuat" target="_blank" aria-label="Jkuat X Link">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 512 512"
-                    className="h-[20px] w-[20px] fill-[#809cce]"
-                  >
-                    <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/school/jkuat/"
-                  target="_blank" aria-label="Jkuat Linked In Link"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 448 512"
-                    className="h-[20px] w-[20px] fill-[#809cce]"
-                  >
-                    <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div> */}
           <div className=" flex mt-3">
             <span className=" mr-3 min-w-14">
               <a href="https://jhubafrica.com/" target="_blank" aria-label="Jhub Web Link">
@@ -104,7 +44,7 @@ const Footer = () => {
                   src="/partners/jhub.png"
                   height={40}
                   width={50}
-                  className="bg-white"
+                  className="bg-white rounded-md"
                 />
               </a>
             </span>

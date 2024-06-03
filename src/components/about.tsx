@@ -8,7 +8,7 @@ const About = () => {
                 <div className='bg-[#F8F8F8] p-8 md:w-2/3 mx-2 shadow rounded-md transition duration-300 ease-in-out transform hover:scale-105'>
                     <h2 className="text-4xl font-bold text-title text-center mb-5 z-10">About 
                         <span className='text-blue-800'> Aqua</span>
-                        <span className='text-blue-400'>twin</span></h2>
+                        <span className='text-blue-400'>Twin</span></h2>
                     <p className='md:text-lg'>
                         Aquatwin is a project that aims to build a digital twin - a virtual replica
                         of transboundary river basins - that uses real-time satellite data to monitor water flow, quality,

@@ -246,7 +246,7 @@ const AboutPage = () => {
             Our solution
           </h2>
           {solutions.map((solution, index) => (
-            <div className="flex gap-2" key={index}>
+            <div className="flex gap-2 max-w-[750px] mx-auto" key={index}>
               <BadgeCheck stroke="green" className="w-8 h-8" />
               <div className="mb-4">
                 <h3 className="font-semibold">{solution.title}</h3>
