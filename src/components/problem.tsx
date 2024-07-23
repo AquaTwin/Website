@@ -15,14 +15,9 @@ const Problem = () => {
               Problem Statement
             </h2>
             <p className="md:text-lg">
-              Kenya faces a severe water crisis. Over 80% of the land is arid or
-              semi-arid, leading to uneven water distribution. One-third of
-              Kenya&rsquo;s water comes from shared transboundary rivers and the
-              rapidly growing population strains these resources, which leads to
-              conflict between countries sharing these resources. Climate change
-              disrupts weather patterns with increasingly severe floods and
-              droughts. To address these challenges, we need a data-driven
-              approach to managing Kenya&rsquo;s water resources.
+              Residents are terrorized by floods from heavy rains. These floods wreak havoc, displacing people, destroying homes and farms, and polluting water sources.
+              This constant threat creates anxiety and disrupts daily life, damaging schools and hindering agriculture.
+              Lack of a flood warning system leaves everyone unprepared, worsening the impact on lives, livelihoods, and the entire community.
             </p>
           </div>
         </section>
